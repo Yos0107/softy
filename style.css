@@ -14,113 +14,30 @@ Template: fairy
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, rtl-language-support, footer-widgets, custom-header, three-columns, one-column, left-sidebar, news, blog
 */
 
-/*
 
-body, button, input, select, optgroup, textarea, 
-.site-footer *, .site-footer a, .site-footer p {
-    color: #ccc;
-}
-
-a:focus,
-input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, textarea:focus {
-	color: #ccc;
-	outline-color: #D8C4A4;
-}
-
-.card_title a,
-.site-description,
-.btn-primary,
-body .btn-primary, .btn.btn-primary,
-.card-blog-post .card_body p,
-.search-form .search-field,
-.wp-block-search .wp-block-search__input {
-	color: #ddd;
-}
-
-.main-navigation a,
-.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a, 
-.site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a,
-.btn-secondary-border, .main-navigation a, .widget-area .widget a, 
-.search-form .search-field:focus, .category-label-group a, .page-links .post-page-numbers,
-.card-blog-post .entry-meta a, .post-navigation .nav-links > * a, .ct-dark-mode .wp-block-table.is-style-stripes table tr:nth-child(2n + 1),
-.breadcrumb-trail .trial-items a, .breadcrumbs ul a,
-.breadcrumb-trail .trial-items li + li:before, .breadcrumbs ul li + li:before {
-	color: #ccc;
-}
-
-p a, .entry-content a
-.site-title, .site-title a, h1.site-title a, p.site-title a, .site-title a:visited {
-	color: #D8C4A4;
-}
-
-.search-form .search-field:focus,
-.wp-block-search .wp-block-search__input:focus {
-	color: #444;
-}
-
-/* Background Color */
-
-/* .site-header, .site-footer-top .widget .widget-title:after, .card-blog-post, .widget-area .widget,
-.site-footer-top {
-	background-color: #212121;
-}
-
-.site-header.site-header-left-logo .site-header-top, .site-header.site-header-v2 .site-header-topbar,
-.site-footer-bottom {
-	background-color:#1c1c1c;
-}
-
-.btn-primary,
-.search-form .search-submit,
-input[type="submit"],
-.wp-block-search .wp-block-search__button,
-.pagination .page-numbers {
-	background-color: #444;
-}
-*/
 #secondary .widget .widget-title:after {
 	background-color: #cd3636;
 }
 
-/* textarea, input, select, optgroup, 
-.comment-list .comment .comment-body {
-	background-color: #1c1c1c;
-	color: #ccc;
-} */
-
-/* Border Color */
-
-/* .wp-block-search .wp-block-search__button,
-.search-form .search-field,
-.wp-block-search .wp-block-search__input {
-	border-color: #444;
-}
-
-
-.site-header-bottom, .site-header-top {
-	border-color: #bbb;
-} */
-
-/* .btn-primary{
-	background-color: #cd3636;
-} */
-
-/* Hover Color */
 
 a:hover {
 	color: #cd3636;
 }
 
 .card_title a:hover,
-.main-navigation #primary-menu > li > a:hover,
-.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:hover, .site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:focus, .site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:hover, .site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:focus, .top-header-toggle-btn,
+.main-navigation #primary-menu>li>a:hover,
+.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:hover,
+.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:focus,
+.site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:hover,
+.site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:focus,
+.top-header-toggle-btn,
 .site-footer a:hover {
 	color: #D8C4A4;
-}  
+}
 
-.single .card-blog-post .card_body{
-    width: 100%;
-    flex-basis: 100%;
+.single .card-blog-post .card_body {
+	width: 100%;
+	flex-basis: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -130,7 +47,7 @@ a:hover {
 }
 
 
-.card-blog-post{
+.card-blog-post {
 	box-shadow: none;
 	background: #f5f5f5;
 
@@ -139,8 +56,7 @@ a:hover {
 .card-blog-post .card_media img,
 img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
 .card.card-bg-image.card-promo,
-.slick-list.draggable
-{
+.slick-list.draggable {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	height: 100%;
@@ -149,24 +65,26 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
 }
 
 
-.widget-area .widget{
+.widget-area .widget {
 	background-color: #e5ece9;
 	box-shadow: none;
 	border-radius: 10px;
 }
+
 /* widget box radius */
-.wp-block-search .wp-block-search__input{
+.wp-block-search .wp-block-search__input {
 	border-radius: 5px 0px 0px 5px;
 }
-.wp-block-search .wp-block-search__button{
+
+.wp-block-search .wp-block-search__button {
 	border-radius: 0px 5px 5px 0px;
 }
 
-.card_title a:hover{
+.card_title a:hover {
 	color: #cd3636;
 }
 
-.btn-primary{
+.btn-primary {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -174,7 +92,7 @@ body {
 	background: #f5f5f5;
 }
 
-.related-post .card-blog-post img{
+.related-post .card-blog-post img {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	height: 100%;
@@ -217,8 +135,18 @@ body {
 }
 
 
-.category-label-group a:after{
+.category-label-group a:after {
 	display: none;
+}
+
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.col,
+[class*="col-"] {
+	padding: 0 15px;
 }
 
 /* Menu CSS*/
@@ -269,59 +197,44 @@ body {
 	margin: 0;
 }
 
-.fairy-menu-social li a, .social-menu li a {
+.fairy-menu-social li a,
+.social-menu li a {
 	width: 25px;
 	height: 25px;
 	line-height: 2;
 }
 
-.site-header.site-header-left-logo .site-header-top .social-menu li a:before, .site-header-topbar .social-menu li a:before {
+.site-header.site-header-left-logo .site-header-top .social-menu li a:before,
+.site-header-topbar .social-menu li a:before {
 	font-size: 12px;
 }
+
 /* Menu */
-.site-header.site-header-left-logo .site-header-top{
+
+.site-header .row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-header.site-header-left-logo .site-header-top {
+	width: 30%;
 	background-color: transparent;
 }
 
-/* .site-header.site-header-left-logo .site-header-top{
-	padding: 0px;
-} */
+.site-title,
+.site-description {
+	text-align: left;
+}
 
-/* Shine */
-/* .hover14 figure {
-	position: relative;
+.site-header-bottom {
+	width: 70%;
+	border-style: none;
 }
-.hover14 figure::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 50%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.hover14 figure:hover::before {
-	-webkit-animation: shine .75s;
-	animation: shine .75s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-} */
 
+/* FAIRY CONTENT AREA ---------- */
 .card-blog-post figure {
 	position: relative;
+	overflow: hidden;
 }
 
 .card-blog-post:hover figure::before {
@@ -333,25 +246,121 @@ body {
 	content: '';
 	width: 50%;
 	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+	background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
 	-webkit-transform: skewX(-25deg);
 	transform: skewX(-25deg);
 }
 
 .card-blog-post:hover figure:hover::before {
 	-webkit-animation: shine .75s;
-	animation: shine .75s;
+	animation: shine .9s;
 }
 
 @-webkit-keyframes shine {
 	100% {
-			left: 125%;
+		left: 125%;
 	}
 }
 
 @keyframes shine {
 	100% {
-			left: 125%;
+		left: 125%;
 	}
+}
+
+/* PAGINATION --------------- */
+
+.pagination .page-numbers {
+	border-radius: 5px;
+}
+
+/* WIDGET --------------- */
+
+.widget-area .widget {
+	margin-bottom: 40px;
+	padding: 30px;
+}
+
+.widget.widget_block {
+	position: relative;
+}
+
+.wp-block-group__inner-container .wp-block-heading {
+	margin-top: 0;
+	padding: 5px 30px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	display: inline-block;
+	position: absolute;
+	top: -20px;
+	background-color: #fff;
+	font-size: 20px;
+}
+
+.widget ul li {
+	margin-bottom: 10px;
+}
+
+.wp-block-group__inner-container {
+	padding-top: 20px;
+}
+
+.wp-block-latest-posts__featured-image {
+	float: left;
+	width: 30%;
+	margin: 0 15px 10px 0;
+}
+
+.wp-block-latest-posts__featured-image img {
+	border-radius: 10px;
+}
+
+/* HERO SLICK SLIDER ---------- */
+.promo-section .card-bg-image .card_media a img {
+	max-height: 200px;
+}
+
+/* .card-bg-image.card-promo .card_title {
+	position: relative;
+} */
+
+.card-bg-image.card-promo .card_body {
+	bottom: 0;
+	transform: translate(0, 0);
+}
+
+.card-bg-image.card-promo .card_title {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
+
+.card-bg-image.card-promo .card_title>a {
+	background-color: transparent;
+	padding: 0;
+	max-width: 100%;
+	transition: 0.4s ease-in-out;
+}
+
+.card-bg-image.card-promo:hover .card_title a {
+	background-color: transparent;
+	color: transparent;
+	animation: none;
+}
+
+.card-bg-image.card-promo .card_media a:after {
+	transition: 0.4s ease-in-out;
+}
+
+.card-bg-image.card-promo .card_media a:hover::after {
+	width: 0%;
+	transition: 0.4s ease-in-out;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 55px;
+	color: #cd3636;
+	transition: 0.3s ease-in-out;
 }
