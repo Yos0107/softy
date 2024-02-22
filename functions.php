@@ -35,7 +35,7 @@ if ( !function_exists('fairy_default_theme_options_values') ) :
            'fairy-enable-category-boxes'=> false,
            'fairy-single-cat-posts-select-1'=> 0,
 
-        //    Category color
+            //Category color
            'fairy-enable-category-color'=> true,
            'fairy-category-line-color' => '#3D3B40',
 
@@ -64,13 +64,12 @@ if ( !function_exists('fairy_default_theme_options_values') ) :
            'fairy-single-page-related-posts'=> true,
            'fairy-single-page-related-posts-title'=> esc_html__('Related Posts','fairy'),
 
-
            /*Breadcrumb Settings*/
            'fairy-blog-site-breadcrumb'=> true,
            'fairy-breadcrumb-display-from-option'=> 'theme-default',
            'fairy-breadcrumb-text'=> '',
 
-            /*General Colors*/
+        /*General Colors*/
            'fairy-primary-color' => '#cd3636',
            'fairy-header-description-color'=>'#404040',
 
@@ -95,7 +94,6 @@ if ( !function_exists('fairy_default_theme_options_values') ) :
            /*Extra Options*/
            'fairy-post-published-updated-date'=> 'post-published',
            'fairy-font-awesome-version-loading'=> 'version-6',
-
         );
         return apply_filters( 'fairy_default_theme_options_values', $default_theme_options );
     }
@@ -179,33 +177,33 @@ $wp_customize->add_control(
 
 /*Enable Top Header Section*/
 $wp_customize->add_setting( 'fairy_options[fairy-enable-category-color]', array(
-   'capability'        => 'edit_theme_options',
-   'transport' => 'refresh',
-   'default'           => $default['fairy-enable-category-color'],
-   'sanitize_callback' => 'fairy_sanitize_checkbox'
+    'capability'        => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default'           => $default['fairy-enable-category-color'],
+    'sanitize_callback' => 'fairy_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'fairy_options[fairy-enable-category-color]', array(
-   'label'     => __( 'Enable Category Color', 'fairy' ),
-   'description' => __('Checked to enable the category color and select the required color for each category.', 'fairy'),
-   'section'   => 'fairy_category_color_setting',
-   'settings'  => 'fairy_options[fairy-enable-category-color]',
-   'type'      => 'checkbox',
-   'priority'  => 1,
+    'label'     => __( 'Enable Category Color', 'fairy' ),
+    'description' => __('Checked to enable the category color and select the required color for each category.', 'fairy'),
+    'section'   => 'fairy_category_color_setting',
+    'settings'  => 'fairy_options[fairy-enable-category-color]',
+    'type'      => 'checkbox',
+    'priority'  => 1,
 ) );
 
 /*callback functions header section*/
 if ( !function_exists('fairy_colors_active_callback') ) :
-  function fairy_colors_active_callback(){
-      global $fairy_theme_options;
-      $fairy_theme_options = fairy_get_options_value();
-      $enable_color = absint($fairy_theme_options['fairy-enable-category-color']);
-      if( 1 == $enable_color ){
-          return true;
-      }
-      else{
-          return false;
-      }
-  }
+    function fairy_colors_active_callback(){
+        global $fairy_theme_options;
+        $fairy_theme_options = fairy_get_options_value();
+        $enable_color = absint($fairy_theme_options['fairy-enable-category-color']);
+        if( 1 == $enable_color ){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 endif;
 
 $i = 1;
@@ -224,17 +222,17 @@ foreach ($categories as $category_list ) {
         'sanitize_callback' => 'sanitize_hex_color'
     ));
     $wp_customize->add_control(
-    	new WP_Customize_Color_Control(
-    		$wp_customize,
-		    'fairy_options[cat-'.get_cat_id($wp_category_list[$category_list->cat_ID]).']',
-		    array(
-		    	'label'     => sprintf(__('"%s" Color', 'fairy'), $wp_category_list[$category_list->cat_ID] ),
-			    'section'   => 'fairy_category_color_setting',
-			    'settings'  => 'fairy_options[cat-'.get_cat_id($wp_category_list[$category_list->cat_ID]).']',
-			    'priority'  => $i,
+        new WP_Customize_Color_Control(
+            $wp_customize,
+            'fairy_options[cat-'.get_cat_id($wp_category_list[$category_list->cat_ID]).']',
+            array(
+                'label'     => sprintf(__('"%s" Color', 'fairy'), $wp_category_list[$category_list->cat_ID] ),
+                'section'   => 'fairy_category_color_setting',
+                'settings'  => 'fairy_options[cat-'.get_cat_id($wp_category_list[$category_list->cat_ID]).']',
+                'priority'  => $i,
                 'active_callback'   => 'fairy_colors_active_callback'
-		    )
-	    )
+            )
+        )
     );
     $i++;
 }
@@ -257,7 +255,6 @@ function fairy_dynamic_css()
     $first_overlay_color = esc_attr( $fairy_theme_options['fairy-overlay-color'] );
     $second_overlay_color = esc_attr( $fairy_theme_options['fairy-overlay-second-color'] );
     $fairy_custom_css .= ".card-bg-image:after, .card-bg-image.card-promo .card_media a:after  {background-image: linear-gradient(45deg, $first_overlay_color, $second_overlay_color)!important; }";
-
 
     if(!empty($fairy_theme_options['fairy-enable-category-color']) && $fairy_theme_options['fairy-enable-category-color'] == 1){
         // $enable_category_color = $fairy_theme_options['fairy-enable-category-color'];
@@ -300,7 +297,6 @@ function fairy_dynamic_css()
             }
             ";
             }
-
             $i++;
         }
     }
@@ -398,10 +394,8 @@ if (!function_exists('fairy_default_header')) {
      */
     function fairy_default_header()
     {
-
         //has header image
         $has_header_image = has_header_image();
-
     ?>
 
         <div id="site-nav-wrap">
@@ -422,7 +416,6 @@ if (!function_exists('fairy_default_header')) {
                                     do_action('fairy_branding');
                                     ?>
                                 </div>
-
                             </div>
                         </div>
                     </section>
@@ -439,10 +432,8 @@ if (!function_exists('fairy_default_header')) {
                              */
                             do_action('fairy_main_menu');
                             ?>
-
                         </div>
                     </section>
-
                 </div>
             </div>
         </div>
