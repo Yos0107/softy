@@ -14,14 +14,45 @@ Template: fairy
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, rtl-language-support, footer-widgets, custom-header, three-columns, one-column, left-sidebar, news, blog
 */
 
+:root {
+	--color-body: #404040;
+	--color-primary: #d10014;
+}
+
+.primary-bg,
+.btn-primary,
+.main-navigation ul ul a,
+#secondary .widget .widget-title:after,
+#primary .widget .widget-title:after,
+.fairy-before-footer-widgets .widget .widget-title:after,
+.fairy-after-slider-widgets .widget .widget-title:after,
+.search-form .search-submit,
+.category-label-group a:after,
+.posts-navigation .nav-links a,
+.category-label-group.bg-label a,
+.wp-block-button__link,
+.wp-block-button.is-style-outline .wp-block-button__link:hover,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover,
+table #today,
+.tagcloud .tag-cloud-link:hover,
+.ajax-pagination .show-more,
+.fairy-menu-social a.website,
+#masthead #primary-menu.off_canva_nav>.close-nav {
+	background-color: var(--color-primary);
+}
 
 #secondary .widget .widget-title:after {
-	background-color: #cd3636;
+	background-color: var(--color-primary);
 }
 
 
 a:hover {
-	color: #cd3636;
+	color: var(--color-primary);
 }
 
 .card_title a:hover,
@@ -32,7 +63,7 @@ a:hover {
 .site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:focus,
 .top-header-toggle-btn,
 .site-footer a:hover {
-	color: #D8C4A4;
+	color: var(--color-primary);
 }
 
 .single .card-blog-post .card_body {
@@ -81,7 +112,7 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
 }
 
 .card_title a:hover {
-	color: #cd3636;
+	color: var(--color-primary);
 }
 
 .btn-primary {
@@ -107,11 +138,11 @@ body {
 .cat-links a {
 	font-size: 13px;
 	display: inline-block;
-	padding: 5px 10px 5px 15px;
+	padding: 5px 15px;
 	margin-bottom: 5px;
 	border-radius: 3px;
 	color: #fff;
-	background-color: #cd3636;
+	background-color: var(--color-primary);
 	background-size: 5% 100%;
 	transition: 0.4s;
 	background-image: linear-gradient(#3D3B40, #3D3B40);
@@ -149,6 +180,17 @@ body {
 	padding: 0 15px;
 }
 
+.btn-primary,
+.pagination .page-numbers.current,
+.pagination .page-numbers:hover,
+button {
+	background-color: var(--color-primary);
+}
+
+.widget-area .widget a:hover {
+	color: var(--color-primary);
+}
+
 /* Menu CSS*/
 .site-header-topbar {
 	background-color: #e5ece9;
@@ -157,7 +199,7 @@ body {
 }
 
 .main-navigation #primary-menu>li>a:hover {
-	color: #cd3636;
+	color: var(--color-primary);
 }
 
 .site-header-topbar .site-header-top-menu {
@@ -286,29 +328,37 @@ body {
 	padding: 30px;
 }
 
-.widget.widget_block {
-	position: relative;
-}
-
 .wp-block-group__inner-container .wp-block-heading {
 	margin-top: 0;
-	padding: 5px 30px;
-	border: 1px solid #000;
-	border-radius: 10px;
+	font-size: 22px;
+	position: relative;
+	margin-bottom: 25px;
 	display: inline-block;
+}
+
+.wp-block-group__inner-container .wp-block-heading:after {
+	content: "";
 	position: absolute;
-	top: -20px;
-	background-color: #fff;
-	font-size: 20px;
+	height: 4px;
+	width: 40%;
+	background-color: var(--color-primary);
+	left: 0;
+	bottom: -5px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-family: 'slick';
+	font-size: 70px;
 }
 
 .widget ul li {
 	margin-bottom: 10px;
 }
 
-.wp-block-group__inner-container {
+/* .wp-block-group__inner-container {
 	padding-top: 20px;
-}
+} */
 
 .wp-block-latest-posts__featured-image {
 	float: left;
@@ -389,12 +439,20 @@ time.wp-block-latest-posts__post-date:before {
 	justify-content: space-between;
 }
 
+/* --------------------------------------- */
 .slick-prev:before,
 .slick-next:before {
 	font-size: 55px;
-	color: #cd3636;
+	color: var(--color-primary);
+	;
 	transition: 0.3s ease-in-out;
 }
+
+.category-label-group a:hover {
+	color: #fff;
+}
+
+/* ----------------------------------- */
 
 .wp-block-latest-posts__featured-image img {
 	width: 100px;
@@ -428,7 +486,6 @@ time.wp-block-latest-posts__post-date:before {
 
 .cat-links a {
 	background-size: 0;
-	border-radius: 0;
 	transition: 0.3s ease-in-out;
 }
 
