@@ -123,7 +123,6 @@ global $fairy_theme_options;
         </div>
     </div>
 
-
     <!--<footer class="entry-footer">
 		<?php // fairy_entry_footer(); ?>
 	</footer>--><!-- .entry-footer -->

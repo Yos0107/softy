@@ -301,7 +301,7 @@ function fairy_dynamic_css()
         }
     }
 
-    wp_add_inline_style('fairy-style', $fairy_custom_css);
+    // wp_add_inline_style('fairy-style', $fairy_custom_css);
 
 }
 add_action('wp_enqueue_scripts', 'fairy_dynamic_css', 99);
