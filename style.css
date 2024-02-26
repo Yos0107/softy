@@ -103,7 +103,7 @@ body {
 /*---------------------------------------------------
 # Category links
 *   ----------------------------------------------------- */
-
+/* 
 .cat-links a {
 	font-size: 13px;
 	display: inline-block;
@@ -119,6 +119,7 @@ body {
 	width: max-content;
 	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
 }
+
 
 .cat-links a,
 .cat-links a:visited,
@@ -147,7 +148,7 @@ body {
 .col,
 [class*="col-"] {
 	padding: 0 15px;
-}
+} */
 
 /* Menu CSS*/
 .site-header-topbar {
