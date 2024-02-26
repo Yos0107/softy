@@ -329,6 +329,10 @@ time.wp-block-latest-posts__post-date:before {
 	justify-content: space-between;
 }
 
+.fairy_widget_author .fairy-menu-social li a:before {
+	font-size: 13.5px;
+}
+
 /* BLOG LIST SECTION ------------- */
 .card-blog-post {
 	padding: 0px;
@@ -344,4 +348,53 @@ time.wp-block-latest-posts__post-date:before {
 
 .slick-slide .entry-meta .entry-date:hover {
 	color: #d10014;
+}
+
+/* FOOTER ----------------- */
+
+#fairy-social-icons-2 .social-menu li a {
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.site-footer-bottom{
+	font-size: 14px;
+}
+
+/* Dark Light Mode-------------- */
+
+.switch {
+	padding: 0;
+	width: 35px;
+	height: 35px;
+	line-height: 1;
+}
+
+.switch input {
+	display: none;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 28px;
+	height: 24px;
+}
+
+.switch .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #ccc;
+	border-radius: 34px;
+	transition: .4s;
+}
+
+.switch .slider::before {
+	background: linear-gradient(90deg, #89216b 0%, #da4453 100%);
+	color: #fff;
 }

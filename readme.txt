@@ -5,7 +5,7 @@ Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-
 Requires at least: 4.5
 Requires PHP: 5.2
 Tested up to: 6.0
-Stable tag: 1.0.1
+Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,21 +31,26 @@ Softy WordPress Theme is a child theme of Fairy, Copyright 2021 Candid Themes
 Softyis distributed under the terms of the GNU General Public License v2
 
 == Images License ==
-Image for screenshot, Copyright Pxhere
-License: Creative Commons CC0 license.
-License URI: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/17396
-
-Image for screenshot, Copyright Pxhere
-License: Creative Commons CC0 license.
-License URI: https://pxhere.com/en/license
-Source: https://pxhere.com/en/photo/1619
 
 Image for screenshot, Copyright directmedia
 License: Creative Commons CC0 license.
 License URI: https://stocksnap.io/license
-Source: https://stocksnap.io/photo/business-woman-FPQIEQBMPA
+Source: https://stocksnap.io/photo/flower-arrangement-9Q5VOGNBDR
 
+Image for screenshot, Copyright directmedia
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/donut-sprinkles-BHIL9FV6RK
+
+Image for screenshot, Copyright directmedia
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/isometric-artic-L8AM6FTOKD
+
+Image for screenshot, Copyright directmedia
+License: Creative Commons CC0 license.
+License URI: https://stocksnap.io/license
+Source: https://stocksnap.io/photo/dog-sunglasses-ZVCXJVXL75
 
 
 Logo of the screenshot is self created and license under GPL.

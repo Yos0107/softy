@@ -57,6 +57,9 @@ if ( !function_exists('fairy_default_theme_options_values') ) :
            /*Blog Layout Overlay*/
            'fairy-site-layout-blog-overlay'=> 1,
 
+           /*Site Layout Options*/
+           'fairy-dark-light-layout-options'=> true,
+
            /*Single Page Default Value*/
            'fairy-single-page-featured-image'=> true,
            'fairy-single-page-tags'=> false,
@@ -109,6 +112,7 @@ function softy_style() {
 	wp_enqueue_style( 'softy-style',get_stylesheet_directory_uri() . '/style.css',array('fairy-style'));
 }
 
+
 if (!function_exists('fairy_footer_theme_info')) {
     /**
      * Add Powered by texts on footer
@@ -140,6 +144,30 @@ add_action('fairy_footer_info_texts', 'fairy_footer_theme_info', 20);
 function softy_customize_register( $wp_customize ) {
 
     $default = fairy_default_theme_options_values();
+/**
+ *  Softy Dark Layout Option
+ *
+ * @since Fairy 1.0.0
+ *
+ */
+/*Site dark and light Layout settings*/
+/*Blog Section Box Shadow*/
+$wp_customize->add_setting( 'fairy_options[fairy-dark-light-layout-options]', array(
+    'capability'        => 'edit_theme_options',
+    'transport' => 'refresh',
+    'default'           => $default['fairy-dark-light-layout-options'],
+    'sanitize_callback' => 'fairy_sanitize_checkbox'
+) );
+$wp_customize->add_control( 'fairy_options[fairy-dark-light-layout-options]', array(
+    'label'     => __( 'Dark and Light Layout Optiow', 'fairy' ),
+    'description' => __('Make the overall layout of site dark ad light.', 'fairy'),
+    'section'   => 'fairy_site_layout_section',
+    'settings'  => 'fairy_options[fairy-dark-light-layout-options]',
+    'type'      => 'checkbox',
+    'priority'  => 15,
+) );
+
+
 /**
  *  Fairy Category Color Option
  *
@@ -291,6 +319,7 @@ if (!function_exists('fairy_construct_header')) {
              */
             do_action('fairy_main_header');
             ?>
+
         </header><!-- #masthead -->
     <?php
 
@@ -333,6 +362,7 @@ if (!function_exists('fairy_default_header')) {
                     </section>
 
                     <section class="site-header-bottom">
+
                         <div class="container">
                             <?php
                             /**
@@ -344,7 +374,12 @@ if (!function_exists('fairy_default_header')) {
                              */
                             do_action('fairy_main_menu');
                             ?>
+                            <label class="switch" for="switch">
+                                <input type="checkbox" name="theme" id="switch">
+                                <span class="slider"></span>
+                            </label>
                         </div>
+
                     </section>
                 </div>
             </div>
