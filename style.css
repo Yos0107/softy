@@ -46,6 +46,45 @@ table #today,
 	background-color: var(--color-primary);
 }
 
+.primary-color,
+p a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+.author-title a,
+figure a,
+table a,
+span a,
+strong a,
+li a,
+h1 a,
+.btn-primary-border,
+.main-navigation #primary-menu>li>a:hover,
+.widget-area .widget a:hover,
+.widget-area .widget a:focus,
+.card-bg-image .card_body a:hover,
+.main-navigation #primary-menu>li.focus>a,
+.main-navigation #primary-menu>li.focus-visible>a,
+.category-label-group a:hover,
+.card_title a:hover,
+.card-blog-post .entry-meta a:hover,
+.site-title a:visited,
+.post-navigation .nav-links>* a:hover,
+.post-navigation .nav-links>* a:focus,
+.wp-block-button.is-style-outline .wp-block-button__link,
+.error-404-title,
+.ct-dark-mode a:hover,
+.ct-dark-mode .widget ul li a:hover,
+.ct-dark-mode .widget-area .widget ul li a:hover,
+.ct-dark-mode .post-navigation .nav-links>* a,
+.ct-dark-mode .author-wrapper .author-title a,
+.ct-dark-mode .wp-calendar-nav a,
+.site-footer a:hover {
+	color: #d10014;
+}
+
 #secondary .widget .widget-title:after {
 	background-color: var(--color-primary);
 }
@@ -53,6 +92,10 @@ table #today,
 
 a:hover {
 	color: var(--color-primary);
+}
+
+p {
+	margin-bottom: 15px;
 }
 
 .card_title a:hover,
@@ -77,17 +120,13 @@ a:hover {
 	}
 }
 
-
 .card-blog-post {
 	box-shadow: none;
 	background: #f5f5f5;
-
 }
 
-.card-blog-post .card_media img,
-img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
-.card.card-bg-image.card-promo,
-.slick-list.draggable {
+
+img.attachment-fairy-medium.size-fairy-medium.wp-post-image {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	height: 100%;
@@ -95,6 +134,14 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
 	object-fit: cover;
 }
 
+.card.card-bg-image.card-promo,
+.slick-list.draggable,
+.card-blog-post .card_media img {
+	border-radius: 10px;
+	height: 100%;
+	max-width: 100%;
+	object-fit: cover;
+}
 
 .widget-area .widget {
 	background-color: #e5ece9;
@@ -164,7 +211,6 @@ body {
 	background-size: 100% 100%;
 	width: max-content;
 }
-
 
 .category-label-group a:after {
 	display: none;
@@ -255,6 +301,10 @@ button {
 	font-size: 12px;
 }
 
+.main-navigation a {
+	transition: 0.3s ease-in-out;
+}
+
 /* Menu */
 
 .site-header .row {
@@ -300,7 +350,7 @@ button {
 
 .fairy-content-area .card-blog-post:hover figure:hover::before {
 	-webkit-animation: shine .75s;
-	animation: shine .9s;
+	animation: shine 1.5s;
 }
 
 @-webkit-keyframes shine {
@@ -324,7 +374,6 @@ button {
 /* WIDGET --------------- */
 
 .widget-area .widget {
-	margin-bottom: 40px;
 	padding: 30px;
 }
 
@@ -410,7 +459,7 @@ button {
 
 /* SIDEBAR -------------------- */
 
-a.wp-block-latest-posts__post-title {
+.blog-list-section .wp-block-latest-posts__list a.wp-block-latest-posts__post-title {
 	font-weight: bold;
 	overflow: hidden;
 	display: -webkit-box;
@@ -418,6 +467,7 @@ a.wp-block-latest-posts__post-title {
 	-webkit-box-orient: vertical;
 	margin-bottom: 5px;
 	padding-top: 5px;
+	line-height: 1.3;
 }
 
 .wp-block-latest-posts__post-author:before {
@@ -487,6 +537,44 @@ time.wp-block-latest-posts__post-date:before {
 .cat-links a {
 	background-size: 0;
 	transition: 0.3s ease-in-out;
+}
+
+.ajax-pagination .show-more {
+	font-size: 16px;
+	padding: 9px 25px;
+}
+
+#fairy-social-icons-2 .social-menu li a {
+	width: 30px;
+	height: 30px;
+	line-height: 44px;
+}
+
+.fairy-menu-social li a:before,
+.social-menu li a:before {
+	font-size: 16px;
+	LINE-HEIGHT: 25px;
+}
+
+section.site-footer-bottom {
+	font-size: 14px;
+}
+
+.card_body .card_title {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	font-size: 24px;
+}
+
+span.breadcrumb {
+	color: var(--color-primary);
+	border: 1px solid var(--color-primary);
+}
+
+.slick-slide .entry-meta a.entry-date:hover {
+	color: var(--color-primary);
 }
 
 @media (max-width: 992px) {
