@@ -389,38 +389,3 @@ time.wp-block-latest-posts__post-date:before {
 }
 
 /* Dark Light Mode-------------- */
-
-.switch {
-	padding: 0;
-	width: 35px;
-	height: 35px;
-	line-height: 1;
-}
-
-.switch input {
-	display: none;
-}
-
-.switch {
-	position: relative;
-	display: inline-block;
-	width: 28px;
-	height: 24px;
-}
-
-.switch .slider {
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: #ccc;
-	border-radius: 34px;
-	transition: .4s;
-}
-
-.switch .slider::before {
-	background: linear-gradient(90deg, #89216b 0%, #da4453 100%);
-	color: #fff;
-}
