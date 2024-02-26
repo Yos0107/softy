@@ -152,28 +152,6 @@ $wp_customize->add_section('fairy_category_color_setting', array(
     'description'   => __('You can select the different color for each category.', 'fairy'),
     'panel'          => 'fairy_panel'
 ));
-/* Category Line Color */
-$wp_customize->add_setting( 'fairy_options[fairy-category-line-color]',
-    array(
-        'capability'        => 'edit_theme_options',
-        'transport' => 'refresh',
-        'default'           => $default['fairy-category-line-color'],
-        'sanitize_callback' => 'sanitize_hex_color',
-    )
-);
-$wp_customize->add_control(
-    new WP_Customize_Color_Control(
-        $wp_customize,
-        'fairy_options[fairy-category-line-color]',
-        array(
-            'label'       => esc_html__( 'Category First Line Color', 'fairy' ),
-            'description' => esc_html__( 'Will change the line color of category button.', 'fairy' ),
-            'section'     => 'fairy_category_color_setting',
-            'settings'  => 'fairy_options[fairy-category-line-color]',
-            'priority'  => 1,
-        )
-    )
-);
 
 /*Enable Top Header Section*/
 $wp_customize->add_setting( 'fairy_options[fairy-enable-category-color]', array(
