@@ -99,6 +99,7 @@ if ( !function_exists('fairy_default_theme_options_values') ) :
     }
 endif;
 
+
 /**
 * Enqueue Style
 */
@@ -219,9 +220,8 @@ add_action( 'customize_register', 'softy_customize_register' );
 
 
 /**
- * sofy Header.
+ * Softy Header.
  */
-// require get_template_directory() . '/candidthemes/functions/hook-header.php';
 
 if (!function_exists('fairy_construct_header')) {
     /**
