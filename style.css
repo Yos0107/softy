@@ -14,61 +14,6 @@ Template: fairy
 Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu, featured-images, theme-options, threaded-comments, translation-ready, rtl-language-support, footer-widgets, custom-header, three-columns, one-column, left-sidebar, news, blog
 */
 
-:root {
-	--color-body: #404040;
-	--color-primary: #d10014;
-}
-
-.primary-bg,
-.btn-primary,
-.main-navigation ul ul a,
-#secondary .widget .widget-title:after,
-#primary .widget .widget-title:after,
-.fairy-before-footer-widgets .widget .widget-title:after,
-.fairy-after-slider-widgets .widget .widget-title:after,
-.search-form .search-submit,
-.category-label-group a:after,
-.posts-navigation .nav-links a,
-.category-label-group.bg-label a,
-.wp-block-button__link,
-.wp-block-button.is-style-outline .wp-block-button__link:hover,
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-.pagination .page-numbers.current,
-.pagination .page-numbers:hover,
-table #today,
-.tagcloud .tag-cloud-link:hover,
-.ajax-pagination .show-more,
-.fairy-menu-social a.website,
-#masthead #primary-menu.off_canva_nav>.close-nav {
-	background-color: #d10014;
-}
-
-#secondary .widget .widget-title:after {
-	background-color: #cd3636;
-}
-
-
-a:hover {
-	color: #cd3636;
-}
-
-p {
-	margin-bottom: 15px;
-}
-
-.card_title a:hover,
-.main-navigation #primary-menu>li>a:hover,
-.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:hover,
-.site-header.site-header-left-logo .site-header-top .site-header-top-menu li a:focus,
-.site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:hover,
-.site-header.site-header-v2 .site-header-topbar .site-header-top-menu li a:focus,
-.top-header-toggle-btn,
-.site-footer a:hover {
-	color: #D8C4A4;
-}
 
 .single .card-blog-post .card_body {
 	width: 100%;
@@ -81,13 +26,17 @@ p {
 	}
 }
 
+
 .card-blog-post {
 	box-shadow: none;
 	background: #f5f5f5;
+
 }
 
-
-img.attachment-fairy-medium.size-fairy-medium.wp-post-image {
+.card-blog-post .card_media img,
+img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
+.card.card-bg-image.card-promo,
+.slick-list.draggable {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
 	height: 100%;
@@ -95,14 +44,6 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image {
 	object-fit: cover;
 }
 
-.card.card-bg-image.card-promo,
-.slick-list.draggable,
-.card-blog-post .card_media img {
-	border-radius: 10px;
-	height: 100%;
-	max-width: 100%;
-	object-fit: cover;
-}
 
 .widget-area .widget {
 	background-color: #e5ece9;
@@ -119,9 +60,6 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image {
 	border-radius: 0px 5px 5px 0px;
 }
 
-.card_title a:hover {
-	color: #cd3636;
-}
 
 .btn-primary {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
@@ -142,10 +80,9 @@ body {
 /*---------------------------------------------------
 # Category links
 *   ----------------------------------------------------- */
-.category-label-group a:after {
+.category-label-group a:after{
 	display: none;
 }
-
 .cat-links a {
 	font-size: 13px;
 	display: inline-block;
@@ -154,52 +91,12 @@ body {
 	border-radius: 3px;
 	color: #fff;
 	background-color: #d10014;
-	background-size: 5% 100%;
-	transition: 0.4s;
-	background-image: linear-gradient(#3D3B40, #3D3B40);
-	background-repeat: no-repeat;
-	width: max-content;
-	transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
-}
-
-.cat-links a,
-.cat-links a:visited,
-.cat-links a:hover,
-.cat-links a:visited:hover,
-.widget .ct-post-overlay .post-content.post-relative .cat-links a,
-.widget .ct-post-overlay .post-content.post-relative .cat-links a:visited {
-	color: #fff;
 }
 
 .cat-links a:hover {
-	background-size: 100% 100%;
-	width: max-content;
-}
+	color: #fff;
+	background-color: #141413;
 
-
-.category-label-group a:after {
-	display: none;
-}
-
-.row {
-	margin-left: -15px;
-	margin-right: -15px;
-}
-
-.col,
-[class*="col-"] {
-	padding: 0 15px;
-}
-
-.btn-primary,
-.pagination .page-numbers.current,
-.pagination .page-numbers:hover,
-button {
-	background-color: #d10014;
-}
-
-.widget-area .widget a:hover {
-	color: #d10014;
 }
 
 /* Menu CSS*/
@@ -209,9 +106,6 @@ button {
 	padding-bottom: 10px;
 }
 
-.main-navigation #primary-menu>li>a:hover {
-	color: #cd3636;
-}
 
 .site-header-topbar .site-header-top-menu {
 	list-style: none;
@@ -266,10 +160,6 @@ button {
 	font-size: 12px;
 }
 
-.main-navigation a {
-	transition: 0.3s ease-in-out;
-}
-
 /* Menu */
 
 .site-header .row {
@@ -315,7 +205,7 @@ button {
 
 .card-blog-post:hover figure:hover::before {
 	-webkit-animation: shine .75s;
-	animation: shine 1.5s;
+	animation: shine .9s;
 }
 
 @-webkit-keyframes shine {
@@ -339,6 +229,7 @@ button {
 /* WIDGET --------------- */
 
 .widget-area .widget {
+	margin-bottom: 40px;
 	padding: 30px;
 }
 
@@ -417,14 +308,13 @@ button {
 
 /* SIDEBAR -------------------- */
 
-.blog-list-section .wp-block-latest-posts__list a.wp-block-latest-posts__post-title {
+a.wp-block-latest-posts__post-title {
 	font-weight: bold;
 	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	margin-bottom: 5px;
-	padding-top: 5px;
 }
 
 .wp-block-latest-posts__post-author:before {
@@ -446,14 +336,6 @@ time.wp-block-latest-posts__post-date:before {
 	justify-content: space-between;
 }
 
-.slick-prev:before,
-.slick-next:before {
-	font-size: 55px;
-	color: #cd3636;
-	transition: 0.3s ease-in-out;
-}
-
-
 /* BLOG LIST SECTION ------------- */
 .card-blog-post {
 	padding: 0px;
@@ -461,31 +343,4 @@ time.wp-block-latest-posts__post-date:before {
 
 .card-blog-post figure {
 	border-radius: 10px;
-}
-
-.related-post .card-blog-post .card_media img,
-.fairy-content-area .card-blog-post .card_media img {
-	max-height: 250px;
-}
-
-.card-blog-post .card_media img {
-	width: 100%;
-}
-
-.breadcrumbs ul li+li:before {
-	font-family: 'FontAwesome';
-}
-
-/* RELATED POST --------------- */
-
-.cat-links a {
-	background-size: 0;
-	transition: 0.3s ease-in-out;
-}
-
-@media (max-width: 992px) {
-	.wp-block-latest-posts__featured-image img {
-		width: 150px;
-		height: 150px;
-	}
 }

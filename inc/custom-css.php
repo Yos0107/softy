@@ -21,7 +21,8 @@ function softy_dynamic_css()
     if (!empty($primary_color)) {
 
         $softy_custom_css .= ".ajax-pagination .show-more { background-color: {$primary_color}; }";
-
+        $softy_custom_css .= ".wp-block-search .wp-block-search__button { background-color: {$primary_color}; }";
+        $softy_custom_css .= ".wp-block-search .wp-block-search__button { border: 1px solid {$primary_color}; }";
         $softy_custom_css .= ".ajax-pagination .show-more { border-color: {$primary_color}; }";
     }
 
