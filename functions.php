@@ -376,9 +376,7 @@ if (!function_exists('fairy_default_header')) {
                              */
                             do_action('fairy_main_menu');
                             ?>
-
                         </div>
-
                     </section>
                 </div>
             </div>

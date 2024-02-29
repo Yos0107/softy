@@ -2,14 +2,15 @@
 
 Contributors: candidthemes
 Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, translation-ready, footer-widgets, custom-colors, custom-header, editor-style, rtl-language-support, theme-options, threaded-comments, blog, news
-Requires at least: 4.5
-Requires PHP: 5.2
-Tested up to: 6.0
+Requires at least: 5.4
+Requires PHP: 7.6
+Tested up to: 6.4.3
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
+A Versatile, Clean, and Dynamic WordPress Theme for Creative Websites. Fully widgetized, SEO-friendly, and RTL-ready. Ideal for news, magazines, and personal blogs. Live preview : http://demo.candidthemes.com/softy and documentation at https://docs.candidthemes.com/fairy/
 
 Softy free blog theme.
 
@@ -24,11 +25,11 @@ Softy free blog theme.
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Fairy WordPress Theme, Copyright 2021 Candid Themes
+Fairy WordPress Theme, Copyright 2024 Candid Themes
 Fairy is distributed under the terms of the GNU General Public License v2
 
-Softy WordPress Theme is a child theme of Fairy, Copyright 2021 Candid Themes
-Softyis distributed under the terms of the GNU General Public License v2
+Softy WordPress Theme is a child theme of Fairy, Copyright 2024 Candid Themes
+Softy is distributed under the terms of the GNU General Public License v2
 
 == Images License ==
 
@@ -57,8 +58,5 @@ Logo of the screenshot is self created and license under GPL.
 
 == Changelog ==
 
-= 1.0.1 - June 30 2022 =
-* Fixed mobile menu overlaps with the wp admin bar
-
-= 1.0.0 - June 22 2022 =
+= 1.0.0 - Feb 29 2024 =
 * Initial Submission
