@@ -143,9 +143,18 @@ if (!function_exists('fairy_footer_theme_info')) {
 add_action('fairy_footer_info_texts', 'fairy_footer_theme_info', 20);
 
 
+add_action('customize_register', 'softy_remove_font_awesome_version_option');
+
+
+
+
 function softy_customize_register( $wp_customize ) {
 
     $default = fairy_default_theme_options_values();
+
+    $wp_customize->remove_section('fairy-font-awesome-version-loading');
+
+    
 /**
  *  Softy Dark Layout Option
  *
@@ -184,7 +193,7 @@ $wp_customize->add_section('fairy_category_color_setting', array(
     'panel'          => 'fairy_panel'
 ));
 
-/*Enable Top Header Section*/
+/*Enable Category Color*/
 $wp_customize->add_setting( 'fairy_options[fairy-enable-category-color]', array(
     'capability'        => 'edit_theme_options',
     'transport' => 'refresh',
@@ -246,8 +255,12 @@ foreach ($categories as $category_list ) {
     $i++;
 }
 }
-add_action( 'customize_register', 'softy_customize_register' );
 
+function softy_remove_font_awesome_version_option($wp_customize) {
+    // Remove Font Awesome version loading control
+    $wp_customize->remove_control('fairy_options[fairy-font-awesome-version-loading]');
+}
+add_action( 'customize_register', 'softy_remove_font_awesome_version_option', 99);
 
 /**
  * Softy Header.
