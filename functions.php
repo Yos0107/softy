@@ -110,6 +110,8 @@ add_action( 'wp_enqueue_scripts', 'softy_style');
 function softy_style() {
 	wp_enqueue_style( 'fairy-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'softy-style',get_stylesheet_directory_uri() . '/style.css',array('fairy-style'));
+    wp_enqueue_script('dark-mode-script', get_template_directory_uri() . '/inc/dark-mode.js', array('jquery'), '', true);
+
 }
 
 
@@ -159,7 +161,7 @@ $wp_customize->add_setting( 'fairy_options[fairy-dark-light-layout-options]', ar
     'sanitize_callback' => 'fairy_sanitize_checkbox'
 ) );
 $wp_customize->add_control( 'fairy_options[fairy-dark-light-layout-options]', array(
-    'label'     => __( 'Dark and Light Layout Optiow', 'fairy' ),
+    'label'     => __( 'Dark and Light Layout Option', 'fairy' ),
     'description' => __('Make the overall layout of site dark and light.', 'fairy'),
     'section'   => 'fairy_site_layout_section',
     'settings'  => 'fairy_options[fairy-dark-light-layout-options]',
@@ -374,17 +376,6 @@ if (!function_exists('fairy_default_header')) {
                              */
                             do_action('fairy_main_menu');
                             ?>
-                            <label class="switch" for="switch">
-                                <input type="checkbox" name="theme" id="switch">
-                                <span class="slider"></span>
-                            </label>
-
-                                <input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-label">
-                                    <i class="fas fa-moon"></i>
-                                    <i class="fas fa-sun"></i>
-                                    <span class="ball"></span>
-                                </label>
 
                         </div>
 

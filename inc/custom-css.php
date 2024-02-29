@@ -19,7 +19,6 @@ function softy_dynamic_css()
     $primary_color = !empty($fairy_theme_options['fairy-primary-color']) ? esc_html($fairy_theme_options['fairy-primary-color']) : '';
 
     if (!empty($primary_color)) {
-
         $softy_custom_css .= ".ajax-pagination .show-more { background-color: {$primary_color}; }";
         $softy_custom_css .= ".wp-block-search .wp-block-search__button { background-color: {$primary_color}; }";
         $softy_custom_css .= ".wp-block-search .wp-block-search__button { border: 1px solid {$primary_color}; }";
