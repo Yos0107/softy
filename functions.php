@@ -160,7 +160,7 @@ $wp_customize->add_setting( 'fairy_options[fairy-dark-light-layout-options]', ar
 ) );
 $wp_customize->add_control( 'fairy_options[fairy-dark-light-layout-options]', array(
     'label'     => __( 'Dark and Light Layout Optiow', 'fairy' ),
-    'description' => __('Make the overall layout of site dark ad light.', 'fairy'),
+    'description' => __('Make the overall layout of site dark and light.', 'fairy'),
     'section'   => 'fairy_site_layout_section',
     'settings'  => 'fairy_options[fairy-dark-light-layout-options]',
     'type'      => 'checkbox',
@@ -378,6 +378,14 @@ if (!function_exists('fairy_default_header')) {
                                 <input type="checkbox" name="theme" id="switch">
                                 <span class="slider"></span>
                             </label>
+
+                                <input type="checkbox" class="checkbox" id="checkbox">
+                                <label for="checkbox" class="checkbox-label">
+                                    <i class="fas fa-moon"></i>
+                                    <i class="fas fa-sun"></i>
+                                    <span class="ball"></span>
+                                </label>
+
                         </div>
 
                     </section>

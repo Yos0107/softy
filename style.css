@@ -26,38 +26,11 @@ Tags: two-columns, right-sidebar, custom-background, custom-colors, custom-menu,
 	}
 }
 
-/* FOOTER ----------------- */
-#fairy-social-icons-2 .social-menu li a {
-	width: 30px;
-	height: 30px;
-	line-height: 1.5;
-}
-
-.site-footer-bottom .fairy-menu-social li a,
-.site-footer-bottom .social-menu li a {
-	line-height: 1.5;
-}
-
-.fairy-menu-social li a:before,
-.social-menu li a:before {
-	font-size: 16px;
-}
-
-.site-footer-bottom {
-	font-size: 15px;
-}
-
-.card-blog-post .category-label-group a:hover {
-	color: #fff;
-}
 
 .card-blog-post {
 	box-shadow: none;
 	background: #f5f5f5;
-}
 
-.card-blog-post .card_body p {
-	margin-bottom: 16px;
 }
 
 .card-blog-post .card_media img,
@@ -94,6 +67,7 @@ img.attachment-fairy-medium.size-fairy-medium.wp-post-image,
 .wp-block-search .wp-block-search__button {
 	border-radius: 0px 5px 5px 0px;
 }
+
 
 .btn-primary {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.25);
