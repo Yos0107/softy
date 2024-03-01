@@ -107,6 +107,10 @@ body {
 
 }
 
+.card-blog-post .category-label-group a:hover, .card-blog-post .category-label-group a{
+	color: #fff;
+}
+
 /* Menu CSS*/
 .site-header-topbar {
 	background-color: #e5ece9;
@@ -176,7 +180,6 @@ body {
 }
 
 .site-header.site-header-left-logo .site-header-top {
-	/* width: 30%; */
 	background-color: transparent;
 }
 
