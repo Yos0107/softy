@@ -1,13 +1,13 @@
 /*
-Theme Name: Softy
+Theme Name: Celestia
 Theme URI: https://www.candidthemes.com/themes/fairy/
 Author: candidthemes
 Author URI: http://www.candidthemes.com/
-Description: Softy is a free WordPress blog theme. It is the child theme of Fairy. Featuring a masonry layout and an array of customization options. Custom widgets for authors, featured posts, and social icons enhance its functionality, while top-level menus, social icons, a slider, promotional banners, and sidebar options provide flexibility. Developed by expert WordPress developers, Softy stands out as a meticulously crafted theme for your website needs. Explore Softy today and elevate your online presence effortlessly. Demo: https://fairy.candidthemes.com/
+Description: Celestia is a free WordPress blog theme. It is the child theme of Fairy. Featuring a masonry layout and an array of customization options. Custom widgets for authors, featured posts, and social icons enhance its functionality, while top-level menus, social icons, a slider, promotional banners, and sidebar options provide flexibility. Developed by expert WordPress developers, Celestia stands out as a meticulously crafted theme for your website needs. Explore Celestia today and elevate your online presence effortlessly. Demo: https://fairy.candidthemes.com/
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: softy
+Text Domain: celestia
 Requires PHP: 7.2
 Tested up to: 6.4
 Template: fairy
@@ -176,7 +176,7 @@ body {
 }
 
 .site-header.site-header-left-logo .site-header-top {
-	width: 30%;
+	/* width: 30%; */
 	background-color: transparent;
 }
 

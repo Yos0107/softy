@@ -52,7 +52,7 @@ global $fairy_theme_options;
                         sprintf(
                             wp_kses(
                             /* translators: %s: Name of current post. Only visible to screen readers */
-                                __('Continue reading<span class="screen-reader-text"> "%s"</span>', 'softy'),
+                                __('Continue reading<span class="screen-reader-text"> "%s"</span>', 'celestia'),
                                 array(
                                     'span' => array(
                                         'class' => array(),
@@ -65,7 +65,7 @@ global $fairy_theme_options;
 
                     wp_link_pages(
                         array(
-                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'softy'),
+                            'before' => '<div class="page-links">' . esc_html__('Pages:', 'celestia'),
                             'after' => '</div>',
                         )
                     );

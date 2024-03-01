@@ -1,4 +1,4 @@
-=== Softy ===
+=== Celestia ===
 
 Contributors: candidthemes
 Tags: grid-layout, one-column, two-columns, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, translation-ready, footer-widgets, custom-colors, custom-header, editor-style, rtl-language-support, theme-options, threaded-comments, blog, news
@@ -10,9 +10,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
-A Versatile, Clean, and Dynamic WordPress Theme for Creative Websites. Fully widgetized, SEO-friendly, and RTL-ready. Ideal for news, magazines, and personal blogs. Live preview : http://demo.candidthemes.com/softy and documentation at https://docs.candidthemes.com/fairy/
+A Versatile, Clean, and Dynamic WordPress Theme for Creative Websites. Fully widgetized, SEO-friendly, and RTL-ready. Ideal for news, magazines, and personal blogs. Live preview : http://demo.candidthemes.com/celestia and documentation at https://docs.candidthemes.com/fairy/
 
-Softy free blog theme.
+Celestia free blog theme.
 
 == Installation ==
 
@@ -28,8 +28,8 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Fairy WordPress Theme, Copyright 2024 Candid Themes
 Fairy is distributed under the terms of the GNU General Public License v2
 
-Softy WordPress Theme is a child theme of Fairy, Copyright 2024 Candid Themes
-Softy is distributed under the terms of the GNU General Public License v2
+Celestia WordPress Theme is a child theme of Fairy, Copyright 2024 Candid Themes
+Celestia is distributed under the terms of the GNU General Public License v2
 
 == Images License ==
 

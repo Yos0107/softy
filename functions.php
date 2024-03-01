@@ -2,14 +2,14 @@
 /**
  * Loads the child theme textdomain.
  */
-function softy_load_language() {
-    load_child_theme_textdomain( 'softy' );
+function celestia_load_language() {
+    load_child_theme_textdomain( 'celestia' );
 }
-add_action( 'after_setup_theme', 'softy_load_language' );
+add_action( 'after_setup_theme', 'celestia_load_language' );
 
-if ( ! defined( 'SOFTY_S_VERSION' ) ) {
+if ( ! defined( 'CELESTIA_S_VERSION' ) ) {
     // Replace the version number of the theme on each release.
-    define( 'SOFTY_S_VERSION', '1.0.0' );
+    define( 'CELESTIA_S_VERSION', '1.0.0' );
 }
 
 /**
@@ -106,11 +106,10 @@ endif;
 /**
 * Enqueue Style
 */
-add_action( 'wp_enqueue_scripts', 'softy_style');
-function softy_style() {
+add_action( 'wp_enqueue_scripts', 'celestia_style');
+function celestia_style() {
 	wp_enqueue_style( 'fairy-style', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'softy-style',get_stylesheet_directory_uri() . '/style.css',array('fairy-style'));
-    wp_enqueue_script('dark-mode-script', get_template_directory_uri() . '/inc/dark-mode.js', array('jquery'), '', true);
+	wp_enqueue_style( 'celestia-style',get_stylesheet_directory_uri() . '/style.css',array('fairy-style'));
 
 }
 
@@ -125,16 +124,16 @@ if (!function_exists('fairy_footer_theme_info')) {
     {
         ?>
         <div class="site-info text-center">
-            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'softy' ) ); ?>">
+            <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'celestia' ) ); ?>">
                 <?php
                 /* translators: %s: CMS name, i.e. WordPress. */
-                printf( esc_html__( 'Proudly powered by %s', 'softy' ), 'WordPress' );
+                printf( esc_html__( 'Proudly powered by %s', 'celestia' ), 'WordPress' );
                 ?>
             </a>
             <span class="sep"> | </span>
             <?php
             /* translators: 1: Theme name, 2: Theme author. */
-            printf( esc_html__( 'Theme: %1$s by %2$s.', 'softy' ), 'Softy', '<a href="http://www.candidthemes.com/">Candid Themes</a>' );
+            printf( esc_html__( 'Theme: %1$s by %2$s.', 'celestia' ), 'Celestia', '<a href="http://www.candidthemes.com/">Candid Themes</a>' );
             ?>
         </div><!-- .site-info -->
         <?php
@@ -143,20 +142,13 @@ if (!function_exists('fairy_footer_theme_info')) {
 add_action('fairy_footer_info_texts', 'fairy_footer_theme_info', 20);
 
 
-add_action('customize_register', 'softy_remove_font_awesome_version_option');
-
-
-
-
-function softy_customize_register( $wp_customize ) {
+function celestia_customize_register( $wp_customize ) {
 
     $default = fairy_default_theme_options_values();
 
-    $wp_customize->remove_section('fairy-font-awesome-version-loading');
-
     
 /**
- *  Softy Dark Layout Option
+ *  Celestia Dark Layout Option
  *
  * @since Fairy 1.0.0
  *
@@ -255,15 +247,17 @@ foreach ($categories as $category_list ) {
     $i++;
 }
 }
+add_action( 'customize_register', 'celestia_customize_register');
 
-function softy_remove_font_awesome_version_option($wp_customize) {
+
+function celestia_remove_font_awesome_version_option($wp_customize) {
     // Remove Font Awesome version loading control
     $wp_customize->remove_control('fairy_options[fairy-font-awesome-version-loading]');
 }
-add_action( 'customize_register', 'softy_remove_font_awesome_version_option', 99);
+add_action( 'customize_register', 'celestia_remove_font_awesome_version_option', 99);
 
 /**
- * Softy Header.
+ * Celestia Header.
  */
 
 if (!function_exists('fairy_construct_header')) {
